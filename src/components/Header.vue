@@ -5,29 +5,31 @@
 <template>
 
 	<header class="header">
-		<div class="header__container">
-			Header
+		<div class="header__wrapper">
+			<div class="header__container _container">
+				Header
+			</div>
 		</div>
 	</header>
 
 </template>
 
 <style lang="scss" scoped>
-//====================================================================================================
+
 .header {
 	position: relative;
 	z-index: 50;
 	padding: 10px 0;
 	background-color: #fff;
 
-	@media (min-width: 1025px) {
-		transform: translateY(0);
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		transition: all 0.4s ease 0.1s;
-	}
+	// @media (min-width: 1025px) {
+	// 	transform: translateY(0);
+	// 	position: fixed;
+	// 	top: 0;
+	// 	left: 0;
+	// 	width: 100%;
+	// 	transition: all 0.4s ease 0.1s;
+	// }
 
 	&._header-scroll {
 		transform: translateY(-200%);
